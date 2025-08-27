@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreNow - Discover the World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>ExploreNow</h2>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                    <li><a href="#packages" class="nav-link">Packages</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-book-btn">Book Now</button>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="btn btn-primary desktop-book-btn">Book Now</button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover the World with ExploreNow</h1>
+            <p class="hero-subtitle">Unforgettable adventures await you</p>
+            
+            <div class="search-container">
+                <form class="search-form" id="searchForm">
+                    <div class="search-field">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="destination" placeholder="Where do you want to go?" required>
+                    </div>
+                    <div class="search-field">
+                        <i class="fas fa-calendar"></i>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div class="search-field">
+                        <i class="fas fa-dollar-sign"></i>
+                        <select id="budget" required>
+                            <option value="">Select Budget</option>
+                            <option value="1000-3000">$1,000 - $3,000</option>
+                            <option value="3000-5000">$3,000 - $5,000</option>
+                            <option value="5000-10000">$5,000 - $10,000</option>
+                            <option value="10000+">$10,000+</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Destinations</h2>
+                <p>Explore our most loved destinations around the world</p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Paris">
+                    </div>
+                    <div class="destination-content">
+                        <h3>Paris, France</h3>
+                        <p>The City of Light offers iconic landmarks, world-class cuisine, and romantic charm.</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1533050487297-09b450131914?w=400" alt="Tokyo">
+                    </div>
+                    <div class="destination-content">
+                        <h3>Tokyo, Japan</h3>
+                        <p>A perfect blend of traditional culture and cutting-edge technology.</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=400" alt="New York">
+                    </div>
+                    <div class="destination-content">
+                        <h3>New York, USA</h3>
+                        <p>The Big Apple offers endless entertainment, culture, and iconic sights.</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?w=400" alt="Barcelona">
+                    </div>
+                    <div class="destination-content">
+                        <h3>Barcelona, Spain</h3>
+                        <p>Stunning architecture, vibrant culture, and beautiful Mediterranean beaches.</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=400" alt="Sydney">
+                    </div>
+                    <div class="destination-content">
+                        <h3>Sydney, Australia</h3>
+                        <p>Harbor city with iconic Opera House and stunning coastal landscapes.</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-image">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=400" alt="Bali">
+                    </div>
+                    <div class="destination-content">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Tropical paradise with rich culture, temples, and pristine beaches.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages">
+        <div class="container">
+            <div class="section-header">
+                <h2>Travel Packages</h2>
+                <p>Choose from our carefully curated travel experiences</p>
+            </div>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=400" alt="Adventure Package">
+                    </div>
+                    <div class="package-content">
+                        <h3>Adventure Explorer</h3>
+                        <div class="package-price">$2,499</div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 7 days, 6 nights</li>
+                            <li><i class="fas fa-check"></i> Guided tours included</li>
+                            <li><i class="fas fa-check"></i> 4-star accommodation</li>
+                            <li><i class="fas fa-check"></i> All meals included</li>
+                        </ul>
+                        <button class="btn btn-secondary">View Details</button>
+                    </div>
+                </div>
+                <div class="package-card featured">
+                    <div class="package-badge">Most Popular</div>
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400" alt="Luxury Package">
+                    </div>
+                    <div class="package-content">
+                        <h3>Luxury Getaway</h3>
+                        <div class="package-price">$4,999</div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 10 days, 9 nights</li>
+                            <li><i class="fas fa-check"></i> Private guide</li>
+                            <li><i class="fas fa-check"></i> 5-star accommodation</li>
+                            <li><i class="fas fa-check"></i> Premium experiences</li>
+                        </ul>
+                        <button class="btn btn-primary">View Details</button>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <div class="package-image">
+                        <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?w=400" alt="Budget Package">
+                    </div>
+                    <div class="package-content">
+                        <h3>Budget Friendly</h3>
+                        <div class="package-price">$1,299</div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 5 days, 4 nights</li>
+                            <li><i class="fas fa-check"></i> Group tours</li>
+                            <li><i class="fas fa-check"></i> 3-star accommodation</li>
+                            <li><i class="fas fa-check"></i> Breakfast included</li>
+                        </ul>
+                        <button class="btn btn-secondary">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Travelers Say</h2>
+                <p>Real experiences from our satisfied customers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"ExploreNow made our honeymoon unforgettable. The attention to detail and personalized service exceeded our expectations."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100" alt="Sarah Johnson">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <span>Honeymoon Traveler</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a solo traveler, I felt safe and supported throughout my entire journey. The guides were knowledgeable and friendly."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100" alt="Michael Chen">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>Adventure Seeker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to start your next adventure? Contact us today!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Call Us</h4>
+                            <p>+1 (555) 123-4567</p>
+                            <span>Mon-Fri: 9AM-6PM EST</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>info@explorenow.com</p>
+                            <span>We'll respond within 24 hours</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Visit Us</h4>
+                            <p>123 Travel Street</p>
+                            <span>Adventure City, AC 12345</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ExploreNow</h3>
+                    <p>Making your travel dreams come true with unforgettable experiences around the world.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@explorenow.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Travel St, Adventure City</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for travel tips and exclusive offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ExploreNow. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
