@@ -41,17 +41,37 @@ body.dark-mode {
     padding: 0 20px;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 1rem;
 }
 
-h1 { font-size: 3rem; }
-h2 { font-size: 2.5rem; }
-h3 { font-size: 1.5rem; }
-h4 { font-size: 1.25rem; }
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
 
 p {
     margin-bottom: 1rem;
@@ -146,7 +166,8 @@ p {
     gap: 1rem;
 }
 
-.theme-toggle, .mobile-menu-toggle {
+.theme-toggle,
+.mobile-menu-toggle {
     background: none;
     border: none;
     font-size: 1.25rem;
@@ -157,7 +178,8 @@ p {
     transition: var(--transition);
 }
 
-.theme-toggle:hover, .mobile-menu-toggle:hover {
+.theme-toggle:hover,
+.mobile-menu-toggle:hover {
     background-color: var(--border-color);
 }
 
@@ -169,7 +191,7 @@ p {
 .hero {
     min-height: 100vh;
     background: linear-gradient(rgba(8, 145, 178, 0.3), rgba(14, 116, 144, 0.4)),
-                url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920') center/cover;
+        url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=1920') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -194,6 +216,7 @@ p {
     margin-bottom: 3rem;
     opacity: 0.9;
     animation: fadeInUp 1s ease 0.2s both;
+    color: #d9d9d9;
 }
 
 /* Search Form */
@@ -525,6 +548,7 @@ p {
 
 .social-links {
     display: flex;
+    justify-content: start;
     gap: 1rem;
 }
 
@@ -604,6 +628,7 @@ p {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -753,64 +778,81 @@ html {
     .nav {
         display: none;
     }
-    
+
     .mobile-menu-toggle {
         display: block;
     }
-    
+
     .desktop-book-btn {
         display: none;
     }
-    
+
+    .hero {
+        /* padding-top: 0; */
+        min-height: 70vh;
+    }
+
     .hero-title {
         font-size: 2.5rem;
     }
-    
+
     .search-form {
         grid-template-columns: 1fr;
     }
-    
+
     .destinations-grid,
     .packages-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .testimonials-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-    
+
     .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
     }
-    
+
     .newsletter-form {
         flex-direction: column;
     }
-    
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.75rem; }
-    h3 { font-size: 1.25rem; }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 480px) {
     .container {
         padding: 0 15px;
     }
-    
+
     .hero-title {
         font-size: 2rem;
     }
-    
+
     .search-container {
         padding: 1.5rem;
     }
-    
+
     .destination-card,
     .package-card {
         margin: 0 10px;
